@@ -1,0 +1,18 @@
+use("platzi_store")
+
+db.users.insertOne({
+    email: 'fabooflowers@gmail.com',
+    password: 'J12deed453sfdsf44cf',
+    role: 'customer',
+    social_accounts: ['facebook', 'twitter'],
+    address: {
+        street: 'cr 8391',
+        city: 'Cali',
+        zip: '11022'
+    },
+    shipping_address: {
+        street: 'cr 89134',
+        city: 'Cali',
+        zip: '13011'
+    }
+})

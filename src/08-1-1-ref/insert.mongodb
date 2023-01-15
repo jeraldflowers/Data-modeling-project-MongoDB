@@ -1,0 +1,16 @@
+use("platzi_store")
+
+db.stores.insertOne({
+    storeId: 'ST001',
+    name: "FlowStore",
+    address: "Cr 345"
+})
+
+db.stores_details.insertOne({
+    storeId: 'ST001',
+    description: "texto",
+    manager: {
+        email: "jerald@gmail.com",
+        cellphone: '345534564'
+    }
+})
